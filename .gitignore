@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+# Astah
+*.lock
+*.bak
+*.asta
+
+# System files
+.DS_Store
+.vscode
+
+# Dependencies
+external/
