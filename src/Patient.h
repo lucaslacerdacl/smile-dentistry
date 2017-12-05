@@ -2,7 +2,14 @@ class Patient : public Person {
 private:
     string allergies;
     string medicines;
+    vector<string> type;
 public:
+    void setType (vector<string> _type) {
+        type = _type;
+    }
+    vector<string> getType () {
+        return type;
+    }
     void setAllergies (string _allergies) {
         allergies = _allergies;
     };
