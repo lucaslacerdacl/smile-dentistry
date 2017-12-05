@@ -1,11 +1,21 @@
 class Patient : public Person {
 private:
-    vector<string> type;
+    string allergies;
+    string medicines;
 public:
-    void setType (vector<string> _type) {
-        type = _type;
+    void setAllergies (string _allergies) {
+        allergies = _allergies;
     };
-    vector<string> getType () {
-        return type;
+    string getAllergies () {
+        return allergies;
+    };
+    void setMedicines (string _medicines) {
+        medicines = _medicines;
+    };
+    string getMedicines () {
+        return medicines;
+    };
+    string getInstance() {
+        return "Patient";
     };
 };

@@ -3,7 +3,7 @@ private:
     string type;
     float price;
     Dentist dentist;
-    Date date;
+    Date *date;
 public:
     void setType (string _type) {
         type = _type;
@@ -29,11 +29,11 @@ public:
         return dentist;
     };
 
-    void setDate (Date _date) {
+    void setDate (Date* _date) {
         date = _date;
     };
     
-    Date getDate () {
+    Date* getDate () {
         return date;
     };
 

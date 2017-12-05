@@ -8,4 +8,7 @@ public:
     string getCRO () {
         return CRO;
     };
+    string getInstance() {
+        return "Dentist";
+    };
 };

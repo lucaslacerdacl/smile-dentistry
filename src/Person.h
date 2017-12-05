@@ -4,7 +4,7 @@ private:
     string document;
     string email;
     string phone;
-    Date birthday;
+    Date *birthday;
 public:
     void setName (string _name) {
         name = _name;
@@ -37,13 +37,16 @@ public:
     string getPhone () {
         return phone;
     };
-
-    void setBirthday (Date _birthday) {
+    
+    void setBirthday(Date* _birthday) {
         birthday = _birthday;
     };
 
-    Date getBirthday () {
+    Date* getBirthday() {
         return birthday;
     };
 
+    virtual string getInstance() = 0;
+
+    virtual ~Person() {};
 };

@@ -16,8 +16,11 @@ using namespace std;
 #include "./Dentist.h"
 #include "./Procedure.h"
 #include "./Estimate.h"
+#include "./Clinic.h"
+#include "./example.cpp"
 
 int main() {
 
+    runExamples();
     return 0;
 }

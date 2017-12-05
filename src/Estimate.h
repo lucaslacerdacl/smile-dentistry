@@ -2,7 +2,7 @@ class Estimate {
 private:
     Patient patient;
     vector<Procedure> procedure;
-    Date paymentDate;
+    Date *paymentDate;
     bool isPaid;
 public:
     void setPatient (Patient _patient) {
@@ -21,11 +21,11 @@ public:
         return procedure;
     };
 
-    void setPaymentDate (Date _paymentDate) {
+    void setPaymentDate (Date* _paymentDate) {
         paymentDate = _paymentDate;
     };
 
-    Date getPaymentDate () {
+    Date* getPaymentDate () {
         if (getIsPaid()) {
             return paymentDate;
         } else {

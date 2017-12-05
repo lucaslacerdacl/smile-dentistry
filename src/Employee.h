@@ -1,18 +1,21 @@
 class Employee : public Person{
 private:
-    string type;
+    string role;
     string employmentRelantionship;
 public:
-    void setType (string _type) {
-        type = _type;
+    void setRole (string _role) {
+        role = _role;
     };
-    string getType () {
-        return type;
+    string getRole () {
+        return role;
     };
     void setEmploymentRelantionship (string _employmentRelantionship) {
         employmentRelantionship = _employmentRelantionship;
     };
     string getEmploymentRelantionship () {
         return employmentRelantionship;
+    };
+    string getInstance() {
+        return "Employee";
     };
 };
